@@ -42,9 +42,7 @@ function addTaskToDB(task){
 
 //get data from DB and display it on web page
 function appendToDom(){
-  //empty task object after possible deletion
-  task = {};
-  $.ajax({
+    $.ajax({
     type: 'GET',
     url: '/todo',
     success: function(tasks){
@@ -79,10 +77,12 @@ function areYouSure(event){
   $('.main').addClass('blur');
   $('.message-wrapper').show();
 }
-// Do not DELETE
+// Cansel DELETE
 function canselDelete(){
   $('.message-wrapper').hide();
   $('.main').removeClass('blur');
+  //empty task object
+  task = {};
 }
 // delete task
 function deleteTask(){
@@ -90,8 +90,16 @@ function deleteTask(){
     type: 'DELETE',
     data: task,
     url: '/todo',
-    success: appendToDom
+    success: finishDelete
   });
+}
+
+//finish deletion
+function finishDelete() {
+  task = {};
+  $('.message-wrapper').hide("slow");
+  $('.main').removeClass('blur');
+  appendToDom();
 }
 
 // mark task as completed or vise versa
