@@ -1,0 +1,145 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+.main {
+  width: 900px;
+  margin: 20px auto;
+}
+form {
+  padding: 20px;
+  border: 4px solid #6CC1FF;
+  margin-bottom: 20px;
+  background-color: #E0EFFF;
+  /*background-color: #BEE8FF;*/
+  border-radius: 4px;
+}
+form div {
+  padding: 10px;
+}
+label {
+  display: block; /* add this */
+  padding-bottom: 5px;
+}
+
+.task-box {
+  background-color: #FFFCD7;
+  border: 4px solid #FFD54D;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 5px;
+
+}
+p {
+  color: #4C3D12;
+}
+.task {
+  font-weight: bold;
+}
+
+.description{
+  font-style: italic;
+  font-size: .8em;
+}
+
+.completed {
+  background-color: #E4FFEB;
+  border: 4px solid #21897E;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-right: 10px;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn-red {
+  background-color: #f44336;
+}
+.btn-green {
+  background-color: #4CAF50;
+}
+.btn-blue {
+  background-color: #008CBA;
+}
+textarea {
+  padding: 10px;
+  font-size: .9em;
+  border: 2px solid #6CC1FF;
+  resize: none;
+}
+/*textarea:focus {
+    outline: none !important;
+    border:2px solid red;
+    box-shadow: 0 0 10px #404046;
+}*/
+input {
+  font-size: .9em;
+  border: 2px solid #6CC1FF;
+  padding: 10px;
+}
+
+/* confirm */
+.blur {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+
+
+}
+.message-wrapper {
+    width: 450px;
+    height: 150px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #D8DED9;
+   top: 50%;
+   position: fixed;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1;
+   text-align:center;
+}
+.message-wrapper p{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #DB5461;
+	line-height: 1.25em;
+
+}
+
+/*.button {
+	font-size: 16px;
+	background-color: #008CB9;
+	padding: 16px 32px;
+	color: white;
+	-webkit-transition: 0.4;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4;
+	transition: 0.4s;
+    border: 2px solid #008cb9;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.button:hover {
+	background-color: white;
+	border: 2px solid #008CBA;
+	color: #006a87;
+}
+.button:active {
+	color: #00ADCB;
+	border: 2px solid #00adcb;
+}*/
+/* end of confrim box */

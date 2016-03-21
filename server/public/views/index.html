@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do App</title>
+    <meta charset="utf-8" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- Sripts -->
+    <script type="text/javascript" src="vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/client.js"></script>
+  </head>
+  <body>
+    <div class="message-wrapper">
+			<p>Do you really want to delete?</p>
+      <button class="btn-red">Delete</button>
+			<button class="btn-green">Not now</button>
+		</div>
+    <div class="main">
+      <form id="task-form">
+        <legend>Please enter your new task:</legend>
+        <div class="control-group">
+          <label for="task">Task:</label>
+          <input  id="task" name="task" type="text" placeholder="Enter your task"
+          size="45" required>
+        </div>
+
+        <div class="control-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" cols="58" rows="4"
+              required placeholder="Task description"></textarea>
+            <!-- <input  type="text" id="description" name="description" placeholder="Description" required/> -->
+        </div>
+        <div class="controls">
+            <button type="submit" class="btn-blue"/>Submit</button>
+        </div>
+      </form>
+      <div class="task-list">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
