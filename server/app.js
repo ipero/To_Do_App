@@ -6,7 +6,7 @@ var index = require('./routes/index.js')
 var pg = require ('pg');
 
 var connectString = '';
-if(process.env.DATABASE_URL != undefined) {
+if(process.env.DATABASE_URL) {
   pg.defaults.ssl = true;
   connectString = process.env.DATABASE_URL;
 } else {
