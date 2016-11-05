@@ -4,7 +4,7 @@ var path = require('path');
 var pg = require('pg');
 
 var connectString = '';
-if(process.env.DATABASE_URL != undefined) {
+if(process.env.DATABASE_URL !== undefined) {
   pg.defaults.ssl = true;
   connectString = process.env.DATABASE_URL;
 } else {
@@ -12,7 +12,7 @@ if(process.env.DATABASE_URL != undefined) {
 }
 
 router.post('/', function (req, res) {
-  console.log('recieved req body: ', req.body)
+  console.log('recieved req body: ', req.body);
   pg.connect(connectString, function(err, client, done) {
     if (err) {
       console.log('error connecting to DB:', err);
@@ -125,7 +125,7 @@ router.delete('/', function (req, res) {
       });
     }
 
-  })
+  });
 });
 
 
