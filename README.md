@@ -1,6 +1,7 @@
 # To Do App (Node.js, SQL and jQuery)
 
 [Live Demo of completed Challenge with hard and pro modes ](https://protected-mesa-92230.herokuapp.com)
+<a href="https://protected-mesa-92230.herokuapp.com" target="_blank">Live Demo of completed Challenge with hard and pro modes</a>
 
 ## Challenge
 This weekend is all about showing us that you have a handle on each of the different parts of the full stack. For this weekends challenge, you are going to create a 'TO DO' application. This is the type of application that is very common to tackle when learning a new language, which makes it extremely valuable to work through for the first time, since chances are good that at some point in your career you will tackle this type of application, but in another language.
